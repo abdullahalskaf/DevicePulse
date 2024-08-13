@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevicePulse - Affiliate Marketing for Tech Products">
+    <title>DevicePulse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="site-name">Device<span>Pulse</span></div>
+            <select id="language" class="language-select">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <div class="announcement-bar">
+            <div id="announcement-content" class="announcement-content">
+                <div class="announcement-text"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="carousel-section">
+        <h2>Popular Products</h2>
+        <div class="carousel-container">
+            <button id="prev-popular">&#10094;</button>
+            <div id="popular-products" class="carousel">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <button id="next-popular">&#10095;</button>
+        </div>
+
+        <h2>New Products</h2>
+        <div class="carousel-container">
+            <button id="prev-new">&#10094;</button>
+            <div id="new-products" class="carousel">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <button id="next-new">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <h2>All Products</h2>
+        <div id="product-grid" class="product-grid"></div>
+        <div id="page-numbers" class="pagination"></div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p>&copy; 2024 DevicePulse. All rights reserved.</p>
+    </footer>
+
+    <button id="prev-page" class="nav-button">Previous</button>
+    <button id="next-page" class="nav-button">Next</button>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <button id="chat-button">Help Center</button> <!-- Default to English -->
+        <div id="chat-content" class="chat-content">
+            <h3 id="chat-title">Welcome to Help Center</h3>
+            <p id="chat-message">How can we assist you today?</p>
+            <input type="text" placeholder="Type your message...">
+            <button id="send-chat">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
